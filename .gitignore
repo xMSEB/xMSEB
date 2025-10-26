@@ -1,8 +1,8 @@
 **/build
 **/*.pro.user
-/outputs
+# /outputs
 subtract_1.py
 .vscode
 .venv
-/inputs
+# /inputs
 /metrics/*.vtk
