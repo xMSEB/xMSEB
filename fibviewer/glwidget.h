@@ -73,7 +73,7 @@ private:
     double scale;
     float bg;
     bool p1, p2;
-    bool intermediateNodes = false, startAndEndNodes = true;
+    bool intermediateNodes = false, startAndEndNodes = false;
     bool dualGradient;
     bool useSpline = true;
     QVector3D* selected;

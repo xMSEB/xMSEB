@@ -173,9 +173,10 @@ void Connections::params() {
     c_thr = 0.8;
     start_i = 10;
     numcycles = 7;
-    bell = 5;
+    bell = 8;
     smooth = 3;
-    beta = 0.75;
+    // beta = 0.75;
+    beta = 0.0;
     checkpoints = 0;
     lane_width = 1.0f;
     directed = 0;
@@ -610,7 +611,6 @@ std::pair<QVector3D, double> Connections::computeUndirectedAttractionForce(
 std::pair<QVector3D, double> Connections::computeDirectedAttractionForce(
     Edge* e, Edge* other, int &i
     ) const {
-    // int other_i = other->points.length() - 1 - i;
     int other_i = closest_intermediatePoint_index(other, e, i);
     if (other_i == -1) return {{0, 0, 0}, 0.0};  // no visible match
 
